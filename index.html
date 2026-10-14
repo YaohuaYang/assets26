@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>"Dump my brain so it remembers for me": accessible poster, ASSETS 2026 C08</title>
+<meta name="description" content="Accessible version of poster C08 at ASSETS 2026: an AI-augmented external autobiographical memory for aphantasia and SDAM.">
+<meta name="author" content="Yao-Hua Yang">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #ffffff; --ink: #1a1a1a; --muted: #3d3d3a; --link: #005a8c; --rule: #cfcdc6; --panel: #f1f0ec; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161616; --ink: #f2f2f0; --muted: #cfcfca; --link: #8fd3ff; --rule: #4a4a47; --panel: #232322; }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0 auto; max-width: 46rem; padding: 2rem 1rem 4rem;
+    background: var(--bg); color: var(--ink);
+    font-family: "Atkinson Hyperlegible", Arial, sans-serif; font-size: 1.15rem; line-height: 1.6;
+  }
+  a { color: var(--link); text-underline-offset: 0.15em; }
+  a:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 0.5rem; }
+  h2 { font-size: 1.45rem; line-height: 1.25; margin: 2.2rem 0 0.6rem; }
+  h3 { font-size: 1.2rem; margin: 1.4rem 0 0.3rem; }
+  .meta { color: var(--muted); margin: 0 0 1.2rem; }
+  .panel { background: var(--panel); border-radius: 0.5rem; padding: 0.8rem 1rem; }
+  .key { font-weight: 700; font-size: 1.25rem; border-left: 0.35rem solid var(--link); padding-left: 0.9rem; }
+  table { border-collapse: collapse; margin: 0.6rem 0; min-width: 18rem; }
+  caption { text-align: left; font-weight: 700; padding-bottom: 0.3rem; }
+  th, td { text-align: left; padding: 0.3rem 1.2rem 0.3rem 0; border-bottom: 1px solid var(--rule); }
+  ul { padding-left: 1.3rem; }
+  li + li { margin-top: 0.35rem; }
+  footer { margin-top: 3rem; color: var(--muted); font-size: 1rem; border-top: 1px solid var(--rule); padding-top: 1rem; }
+  @media print {
+    body { max-width: none; padding: 0; font-size: 11.5pt; }
+    h1 { font-size: 20pt; } h2 { font-size: 15pt; } h3 { font-size: 12.5pt; }
+    .key { font-size: 12.5pt; }
+    .web-only { display: none; }
+    a { color: #005a8c; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>&ldquo;Dump my brain so it remembers for me&rdquo;: An AI-Augmented External Autobiographical Memory for Aphantasia and SDAM</h1>
+  <p class="meta">Yao-Hua Yang, Independent Researcher, Kansas, USA. ASSETS 2026, poster C08, Poster Session C, 28 October 2026, Vila Nova de Gaia, Portugal.</p>
+</header>
+
+<main>
+<p class="panel">This is the accessible version of the printed poster. It contains all text on the poster, a description of the diagram, and the longer sentences that were shortened to fit the print.</p>
+
+<nav aria-label="Downloads">
+  <ul>
+    <li class="web-only"><a href="poster-accessible.pdf">Accessible PDF of this page</a> (tagged, A4)</li>
+    <li><a href="poster-A0.pdf">Printed poster</a> (A0 PDF, visual layout)</li>
+    <li>Paper: <a href="https://doi.org/10.1145/3797867.3841206">doi.org/10.1145/3797867.3841206</a> (resolves once the ACM proceedings are published)</li>
+  </ul>
+</nav>
+
+<h2>Key message</h2>
+<p class="key">I supply intent. The agent owns the rest of the memory loop: it gathers, connects, indexes, and surfaces, because I will not pull.</p>
+
+<h2>My profile</h2>
+<p><strong>Aphantasia</strong>: no voluntary mental imagery. <strong>SDAM</strong> (severely deficient autobiographical memory): I cannot relive my own past. Both are self-identified, not diagnosed.</p>
+<table>
+  <caption>Survey of Autobiographical Memory scores, out of 5</caption>
+  <thead><tr><th scope="col">Domain</th><th scope="col">Score</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Episodic</th><td>1.25</td></tr>
+    <tr><th scope="row">Future</th><td>1.17</td></tr>
+    <tr><th scope="row">Spatial</th><td>4.17</td></tr>
+  </tbody>
+</table>
+<p>VVIQ-16: 21 of 80 (aphantasia range). One faculty is high, the rest are at the floor.</p>
+
+<h2>Why memory aids fail me</h2>
+<ul>
+  <li><strong>Nothing tells me what to record.</strong> Faced with a blank diary, I stall.</li>
+  <li><strong>I never return to read it.</strong> The record, and the memory with it, withers.</li>
+  <li><strong>Visual aids form no internal image</strong>, and I rarely take photos.</li>
+</ul>
+<p>The fix is not more storage but a system that elicits what to capture and returns it when it matters.</p>
+
+<h2>How the system works (diagram)</h2>
+<p>The poster shows a flow diagram with three boxes from left to right: Me (supply intent); AI agent, the largest box (sole reader, writer, organizer; gather, connect, index, surface); and Governed store (rules plus index). A Sources box at the top (messages, work, AI chats, calendar, health) feeds the store through an arrow labeled auto-ingest. Me sends intent to the agent and discusses with it; the agent pushes and surfaces context back to me. The agent records to and indexes the store, and reads the store first before acting. A dashed path from Me directly to the store, labeled &ldquo;file or browse the store myself&rdquo;, is marked as removed.</p>
+<p>A loop I do not operate. The agent is the store&rsquo;s only reader, writer, and organizer. The general-purpose agent (Claude) runs interactively and on a schedule, guided by per-folder rule files.</p>
+
+<h2>One month of use (2026-05-20 to 2026-06-20)</h2>
+<ul>
+  <li><strong>29 of 32</strong> days with a captured daily entry</li>
+  <li><strong>46</strong> meeting notes (16 auto-pulled)</li>
+  <li><strong>174</strong> logged AI working sessions</li>
+  <li><strong>27</strong> items filed unconfirmed, <strong>5</strong> held back as too ambiguous to place</li>
+</ul>
+<p>Descriptive counts from one participant, not efficacy measures. One auto-pulled meeting was misfiled, caught only at weekly review.</p>
+
+<h2>Four design principles from daily use</h2>
+<h3>P1, the linchpin: Proactive recall and cross-source connection</h3>
+<p>Before a meeting, the agent assembled, unasked, the last outcome, open action items, and the messages in between: context from four or five places.</p>
+<h3>P2: Language and number as the channel</h3>
+<p>Long, disfluent, mixed-language speech goes in; prose and numbers come out. I read progress off data, such as knee flexion over weeks.</p>
+<h3>P3: Closure by articulation</h3>
+<p>I recap aloud; the agent confirms or corrects. One recap caught three misreadings in action items that had looked complete.</p>
+<h3>P4: Resurfacing dispersed threads</h3>
+<p>A question raised, set aside, and reopened over weeks was rebuilt into what was settled, rejected, and still open.</p>
+
+<h2>Connection is where the deficit bites</h2>
+<p>For a typical worker, fragmented context is a tax paid in toggling; the reconnecting still happens in the head. Mine does not, so the prosthesis must supply it. One risk does not invert: a confidently wrong output I cannot check against my own memory.</p>
+
+<h2>Limits</h2>
+<ul>
+  <li>N = 1, designer as participant.</li>
+  <li>Needs a high digital footprint; a four-day trip cut capture to a fifth.</li>
+  <li>Consent wins over coverage: nothing is recorded at home.</li>
+</ul>
+</main>
+
+<footer>
+  <p>Poster C08 at ASSETS 2026, the 28th International ACM SIGACCESS Conference on Computers and Accessibility. All content is drawn from the paper.</p>
+</footer>
+</body>
+</html>
