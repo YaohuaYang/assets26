@@ -30,7 +30,9 @@
   .key { font-weight: 700; font-size: 1.25rem; border-left: 0.35rem solid var(--link); padding-left: 0.9rem; }
   table { border-collapse: collapse; margin: 0.6rem 0; min-width: 18rem; }
   caption { text-align: left; font-weight: 700; padding-bottom: 0.3rem; }
-  th, td { text-align: left; padding: 0.3rem 1.2rem 0.3rem 0; border-bottom: 1px solid var(--rule); }
+  th, td { vertical-align: top; text-align: left; padding: 0.3rem 1.2rem 0.3rem 0; border-bottom: 1px solid var(--rule); }
+  .scroll { overflow-x: auto; }
+  @media (max-width: 40rem) { th, td { padding-right: 0.6rem; font-size: 1rem; } }
   ul { padding-left: 1.3rem; }
   li + li { margin-top: 0.35rem; }
   footer { margin-top: 3rem; color: var(--muted); font-size: 1rem; border-top: 1px solid var(--rule); padding-top: 1rem; }
@@ -84,6 +86,22 @@
 </ul>
 <p>The fix is not more storage but a system that elicits what to capture and returns it when it matters.</p>
 
+<h2>What my profile changes in the design</h2>
+<p>The poster lists the first three rows. Each row is a design choice that would be a mistake for a typical user but is required for this profile.</p>
+<div class="scroll" role="region" aria-label="Design choices table" tabindex="0">
+<table>
+  <caption>Design choices that invert for this profile</caption>
+  <thead><tr><th scope="col">Trait</th><th scope="col">So the design</th><th scope="col">For a typical user</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">No imagery (aphantasia)</th><td>Works in words and numbers, not pictures; images only illustrate.</td><td>Photos and visual capture cue memory for later review.</td></tr>
+    <tr><th scope="row">No reconnecting in my head (SDAM)</th><td>The agent does the connecting across sources and time.</td><td>Fragmented context is a tax paid in toggling; the reconnecting still happens in the head.</td></tr>
+    <tr><th scope="row">No baseline to lose</th><td>It pushes, even unasked; an un-pushed item is simply lost.</td><td>Push costs attention, and offloading risks disengagement.</td></tr>
+    <tr><th scope="row">I never return to read</th><td>The path where I file or browse the store myself is removed.</td><td>A person files each item and builds their own index.</td></tr>
+    <tr><th scope="row">No internal check</th><td>I recap aloud so the agent can confirm or correct; how I remember feeling is not stored.</td><td>A person can weigh a claim against their own hazy memory.</td></tr>
+  </tbody>
+</table>
+</div>
+
 <h2>How the system works (diagram)</h2>
 <p>The poster shows a flow diagram with three boxes from left to right: Me (supply intent); AI agent, the largest box (sole reader, writer, organizer; gather, connect, index, surface); and Governed store (rules plus index). A Sources box at the top (messages, work, AI chats, calendar, health) feeds the store through an arrow labeled auto-ingest. Me sends intent to the agent and discusses with it; the agent pushes and surfaces context back to me. The agent records to and indexes the store, and reads the store first before acting. A dashed path from Me directly to the store, labeled &ldquo;file or browse the store myself&rdquo;, is marked as removed.</p>
 <p>A loop I do not operate. The agent is the store&rsquo;s only reader, writer, and organizer. The general-purpose agent (Claude) runs interactively and on a schedule, guided by per-folder rule files.</p>
@@ -116,6 +134,9 @@
   <li>Needs a high digital footprint; a four-day trip cut capture to a fifth.</li>
   <li>Consent wins over coverage: nothing is recorded at home.</li>
 </ul>
+
+<h2>At the poster</h2>
+<p>I record my conversations here, audio only, to help me remember each day. If you mind, just tell me.</p>
 </main>
 
 <footer>
